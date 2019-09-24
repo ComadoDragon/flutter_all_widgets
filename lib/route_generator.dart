@@ -13,6 +13,9 @@ import 'package:flutter_all_widgets/widgets/forms/create_and_style_a_text_field.
 import 'package:flutter_all_widgets/widgets/forms/focus_and_text_fields.dart';
 import 'package:flutter_all_widgets/widgets/forms/handle_changes_to_a_text_field.dart';
 import 'package:flutter_all_widgets/widgets/forms/retrieve_the_value_of_a_text_field.dart';
+import 'package:flutter_all_widgets/widgets/gestures/add_material_touch_ripples.dart';
+import 'package:flutter_all_widgets/widgets/gestures/handle_taps.dart';
+import 'package:flutter_all_widgets/widgets/gestures/implement_swipe_to_dismiss.dart';
 
 class RouteGenerator {
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -139,6 +142,36 @@ class RouteGenerator {
         if (args is String) {
           return MaterialPageRoute(
             builder: (_) => RetrieveTheValueOfATextField(
+              title: args,
+            ),
+          );
+        }
+        return _errorRoute();
+      case Constants.ROUTE_ADD_MATERIAL_TOUCH_RIPPLES:
+      // Validation of correct data type
+        if (args is String) {
+          return MaterialPageRoute(
+            builder: (_) => AddMAterialTouchRipples(
+              title: args,
+            ),
+          );
+        }
+        return _errorRoute();
+      case Constants.ROUTE_HANDLE_TAPS:
+      // Validation of correct data type
+        if (args is String) {
+          return MaterialPageRoute(
+            builder: (_) => HandleTaps(
+              title: args,
+            ),
+          );
+        }
+        return _errorRoute();
+      case Constants.ROUTE_IMPLEMENT_SWIPE_TO_DISMISS:
+      // Validation of correct data type
+        if (args is String) {
+          return MaterialPageRoute(
+            builder: (_) => ImplementSwipeToDismiss(
               title: args,
             ),
           );

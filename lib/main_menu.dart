@@ -34,6 +34,9 @@ class MainMenu {
     menuList.add(new MainMenu(10, Constants.ROUTE_FOCUS_AND_TEXT_FIELDS, "Focus and text fields"));
     menuList.add(new MainMenu(11, Constants.ROUTE_HANDLE_CHANGES_TO_TEXT_FIELD, "Handle changes to a text field"));
     menuList.add(new MainMenu(12, Constants.ROUTE_RETRIEVE_THE_VALUE_OF_A_TEXT_FIELD, "Retrieve the value of a text field"));
+    menuList.add(new MainMenu(13, Constants.ROUTE_ADD_MATERIAL_TOUCH_RIPPLES, "Add Material touch ripples"));
+    menuList.add(new MainMenu(14, Constants.ROUTE_HANDLE_TAPS, "Handle taps"));
+    menuList.add(new MainMenu(15, Constants.ROUTE_IMPLEMENT_SWIPE_TO_DISMISS, "Implement swipe to dismiss"));
 
     return menuList;
   }

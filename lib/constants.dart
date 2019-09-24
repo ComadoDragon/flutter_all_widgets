@@ -14,4 +14,7 @@ class Constants {
   static const String ROUTE_FOCUS_AND_TEXT_FIELDS = "/focus_and_text_fields";
   static const String ROUTE_HANDLE_CHANGES_TO_TEXT_FIELD = "/handle_changes_to_a_text_field";
   static const String ROUTE_RETRIEVE_THE_VALUE_OF_A_TEXT_FIELD = "/retrieve_the_value_of_a_text_field";
+  static const String ROUTE_ADD_MATERIAL_TOUCH_RIPPLES = "/add_material_touch_ripples";
+  static const String ROUTE_HANDLE_TAPS = "/handle_taps";
+  static const String ROUTE_IMPLEMENT_SWIPE_TO_DISMISS = "/implement_swipe_to_dismiss";
 }
