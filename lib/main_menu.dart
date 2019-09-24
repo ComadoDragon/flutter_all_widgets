@@ -37,6 +37,9 @@ class MainMenu {
     menuList.add(new MainMenu(13, Constants.ROUTE_ADD_MATERIAL_TOUCH_RIPPLES, "Add Material touch ripples"));
     menuList.add(new MainMenu(14, Constants.ROUTE_HANDLE_TAPS, "Handle taps"));
     menuList.add(new MainMenu(15, Constants.ROUTE_IMPLEMENT_SWIPE_TO_DISMISS, "Implement swipe to dismiss"));
+    menuList.add(new MainMenu(16, Constants.ROUTE_DISPLAY_IMAGES_FROM_THE_INTERNET, "Display images from the internet"));
+    menuList.add(new MainMenu(17, Constants.ROUTE_FADE_IN_IMAGES_WITH_A_PLACEHOLDER, "Fade in images with a placeholder"));
+    menuList.add(new MainMenu(18, Constants.ROUTE_WORK_WITH_CACHED_IMAGES, "Work with cached images"));
 
     return menuList;
   }

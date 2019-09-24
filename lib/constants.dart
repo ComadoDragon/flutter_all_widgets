@@ -17,4 +17,7 @@ class Constants {
   static const String ROUTE_ADD_MATERIAL_TOUCH_RIPPLES = "/add_material_touch_ripples";
   static const String ROUTE_HANDLE_TAPS = "/handle_taps";
   static const String ROUTE_IMPLEMENT_SWIPE_TO_DISMISS = "/implement_swipe_to_dismiss";
+  static const String ROUTE_DISPLAY_IMAGES_FROM_THE_INTERNET = "/display_images_from_the_internet";
+  static const String ROUTE_FADE_IN_IMAGES_WITH_A_PLACEHOLDER = "/fade_in_images_with_a_placeholder";
+  static const String ROUTE_WORK_WITH_CACHED_IMAGES = "/work_with_cached_images";
 }

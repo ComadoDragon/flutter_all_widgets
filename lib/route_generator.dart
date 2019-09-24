@@ -16,6 +16,9 @@ import 'package:flutter_all_widgets/widgets/forms/retrieve_the_value_of_a_text_f
 import 'package:flutter_all_widgets/widgets/gestures/add_material_touch_ripples.dart';
 import 'package:flutter_all_widgets/widgets/gestures/handle_taps.dart';
 import 'package:flutter_all_widgets/widgets/gestures/implement_swipe_to_dismiss.dart';
+import 'package:flutter_all_widgets/widgets/images/display_images_from_the_internet.dart';
+import 'package:flutter_all_widgets/widgets/images/fade_in_images_with_a_placeholder.dart';
+import 'package:flutter_all_widgets/widgets/images/work_with_cached_images.dart';
 
 class RouteGenerator {
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -172,6 +175,36 @@ class RouteGenerator {
         if (args is String) {
           return MaterialPageRoute(
             builder: (_) => ImplementSwipeToDismiss(
+              title: args,
+            ),
+          );
+        }
+        return _errorRoute();
+      case Constants.ROUTE_DISPLAY_IMAGES_FROM_THE_INTERNET:
+      // Validation of correct data type
+        if (args is String) {
+          return MaterialPageRoute(
+            builder: (_) => DisplayImagesFromTheInternet(
+              title: args,
+            ),
+          );
+        }
+        return _errorRoute();
+      case Constants.ROUTE_FADE_IN_IMAGES_WITH_A_PLACEHOLDER:
+      // Validation of correct data type
+        if (args is String) {
+          return MaterialPageRoute(
+            builder: (_) => FadeInImagesWithAPlaceholder(
+              title: args,
+            ),
+          );
+        }
+        return _errorRoute();
+      case Constants.ROUTE_WORK_WITH_CACHED_IMAGES:
+      // Validation of correct data type
+        if (args is String) {
+          return MaterialPageRoute(
+            builder: (_) => WorkWithCachedImages(
               title: args,
             ),
           );
