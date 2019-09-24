@@ -1,13 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_all_widgets/constants.dart';
 import 'package:flutter_all_widgets/home_page.dart';
-import 'package:flutter_all_widgets/widgets/add_a_drawer_to_a_screen.dart';
-import 'package:flutter_all_widgets/widgets/display_a_snackbar.dart';
-import 'package:flutter_all_widgets/widgets/package_fonts.dart';
-import 'package:flutter_all_widgets/widgets/update_the_ui_on_orientation.dart';
-import 'package:flutter_all_widgets/widgets/use_a_custom_font.dart';
-import 'package:flutter_all_widgets/widgets/use_themes_to_share_colors_and_font_styles.dart';
-import 'package:flutter_all_widgets/widgets/work_with_tabs.dart';
+import 'package:flutter_all_widgets/widgets/design/add_a_drawer_to_a_screen.dart';
+import 'package:flutter_all_widgets/widgets/design/display_a_snackbar.dart';
+import 'package:flutter_all_widgets/widgets/forms/build_a_form_with_validation.dart';
+import 'package:flutter_all_widgets/widgets/design/package_fonts.dart';
+import 'package:flutter_all_widgets/widgets/design/update_the_ui_on_orientation.dart';
+import 'package:flutter_all_widgets/widgets/design/use_a_custom_font.dart';
+import 'package:flutter_all_widgets/widgets/design/use_themes_to_share_colors_and_font_styles.dart';
+import 'package:flutter_all_widgets/widgets/design/work_with_tabs.dart';
+import 'package:flutter_all_widgets/widgets/forms/create_and_style_a_text_field.dart';
+import 'package:flutter_all_widgets/widgets/forms/focus_and_text_fields.dart';
+import 'package:flutter_all_widgets/widgets/forms/handle_changes_to_a_text_field.dart';
+import 'package:flutter_all_widgets/widgets/forms/retrieve_the_value_of_a_text_field.dart';
 
 class RouteGenerator {
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -84,6 +89,56 @@ class RouteGenerator {
         if (args is String) {
           return MaterialPageRoute(
             builder: (_) => WorkWithTabs(
+              title: args,
+            ),
+          );
+        }
+        return _errorRoute();
+      case Constants.ROUTE_BUILD_A_FORM_WITH_VALIDATION:
+      // Validation of correct data type
+        if (args is String) {
+          return MaterialPageRoute(
+            builder: (_) => BuildAFormWithValidation(
+              title: args,
+            ),
+          );
+        }
+        return _errorRoute();
+      case Constants.ROUTE_CREATE_AND_STYLE_A_TEXT_FIELD:
+      // Validation of correct data type
+        if (args is String) {
+          return MaterialPageRoute(
+            builder: (_) => CreateAndStyleATextField(
+              title: args,
+            ),
+          );
+        }
+        return _errorRoute();
+      case Constants.ROUTE_FOCUS_AND_TEXT_FIELDS:
+      // Validation of correct data type
+        if (args is String) {
+          return MaterialPageRoute(
+            builder: (_) => FocusAndTextFields(
+              title: args,
+            ),
+          );
+        }
+        return _errorRoute();
+      case Constants.ROUTE_HANDLE_CHANGES_TO_TEXT_FIELD:
+      // Validation of correct data type
+        if (args is String) {
+          return MaterialPageRoute(
+            builder: (_) => HandleChangesToATextField(
+              title: args,
+            ),
+          );
+        }
+        return _errorRoute();
+      case Constants.ROUTE_RETRIEVE_THE_VALUE_OF_A_TEXT_FIELD:
+      // Validation of correct data type
+        if (args is String) {
+          return MaterialPageRoute(
+            builder: (_) => RetrieveTheValueOfATextField(
               title: args,
             ),
           );

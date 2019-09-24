@@ -20,7 +20,7 @@ class WorkWithTabs extends StatelessWidget {
                 Tab(icon: Icon(Icons.directions_bike)),
               ],
             ),
-            title: Text('Tabs Demo'),
+            title: Text(title),
           ),
           body: TabBarView(
             children: [

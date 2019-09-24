@@ -29,6 +29,11 @@ class MainMenu {
     menuList.add(new MainMenu(5, Constants.ROUTE_USE_A_CUSTOM_FONT, "Use a custom font"));
     menuList.add(new MainMenu(6, Constants.ROUTE_USE_THEMES_TO_SHARE_COLORS_AND_FONT_STYLES, "Use themes to share colors and font styles"));
     menuList.add(new MainMenu(7, Constants.ROUTE_WORK_WITH_TABS, "Work with tabs"));
+    menuList.add(new MainMenu(8, Constants.ROUTE_BUILD_A_FORM_WITH_VALIDATION, "Build a form with validation"));
+    menuList.add(new MainMenu(9, Constants.ROUTE_CREATE_AND_STYLE_A_TEXT_FIELD, "Create and style a text field"));
+    menuList.add(new MainMenu(10, Constants.ROUTE_FOCUS_AND_TEXT_FIELDS, "Focus and text fields"));
+    menuList.add(new MainMenu(11, Constants.ROUTE_HANDLE_CHANGES_TO_TEXT_FIELD, "Handle changes to a text field"));
+    menuList.add(new MainMenu(12, Constants.ROUTE_RETRIEVE_THE_VALUE_OF_A_TEXT_FIELD, "Retrieve the value of a text field"));
 
     return menuList;
   }
