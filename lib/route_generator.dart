@@ -19,6 +19,12 @@ import 'package:flutter_all_widgets/widgets/gestures/implement_swipe_to_dismiss.
 import 'package:flutter_all_widgets/widgets/images/display_images_from_the_internet.dart';
 import 'package:flutter_all_widgets/widgets/images/fade_in_images_with_a_placeholder.dart';
 import 'package:flutter_all_widgets/widgets/images/work_with_cached_images.dart';
+import 'package:flutter_all_widgets/widgets/lists/create_a_grid_list.dart';
+import 'package:flutter_all_widgets/widgets/lists/create_a_horizontal_list.dart';
+import 'package:flutter_all_widgets/widgets/lists/create_lists_with_different_types_of_items.dart';
+import 'package:flutter_all_widgets/widgets/lists/place_a_floating_app_bar_above_a_list.dart';
+import 'package:flutter_all_widgets/widgets/lists/use_lists.dart';
+import 'package:flutter_all_widgets/widgets/lists/work_with_long_lists.dart';
 
 class RouteGenerator {
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -205,6 +211,66 @@ class RouteGenerator {
         if (args is String) {
           return MaterialPageRoute(
             builder: (_) => WorkWithCachedImages(
+              title: args,
+            ),
+          );
+        }
+        return _errorRoute();
+      case Constants.ROUTE_CREATE_A_GRID_LIST:
+      // Validation of correct data type
+        if (args is String) {
+          return MaterialPageRoute(
+            builder: (_) => CreateAGridList(
+              title: args,
+            ),
+          );
+        }
+        return _errorRoute();
+      case Constants.ROUTE_CREATE_A_HORIZONTAL_LIST:
+      // Validation of correct data type
+        if (args is String) {
+          return MaterialPageRoute(
+            builder: (_) => CreateAHorizontalList(
+              title: args,
+            ),
+          );
+        }
+        return _errorRoute();
+      case Constants.ROUTE_CREATE_LISTS_WITH_DIFFERENT_TYPES_OF_ITEMS:
+      // Validation of correct data type
+        if (args is String) {
+          return MaterialPageRoute(
+            builder: (_) => CreateListsWithDifferentTypesOfItems(
+              title: args,
+            ),
+          );
+        }
+        return _errorRoute();
+      case Constants.ROUTE_PLACE_A_FLOATING_APP_BAR_ABOVE_A_LIST:
+      // Validation of correct data type
+        if (args is String) {
+          return MaterialPageRoute(
+            builder: (_) => PlaceAFloatingAppBarAboveAList(
+              title: args,
+            ),
+          );
+        }
+        return _errorRoute();
+      case Constants.ROUTE_USE_LISTS:
+      // Validation of correct data type
+        if (args is String) {
+          return MaterialPageRoute(
+            builder: (_) => UseLists(
+              title: args,
+            ),
+          );
+        }
+        return _errorRoute();
+      case Constants.ROUTE_WORK_WITH_LONG_LISTS:
+      // Validation of correct data type
+        if (args is String) {
+          return MaterialPageRoute(
+            builder: (_) => WorkWithLongLists(
               title: args,
             ),
           );

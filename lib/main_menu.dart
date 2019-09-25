@@ -40,6 +40,12 @@ class MainMenu {
     menuList.add(new MainMenu(16, Constants.ROUTE_DISPLAY_IMAGES_FROM_THE_INTERNET, "Display images from the internet"));
     menuList.add(new MainMenu(17, Constants.ROUTE_FADE_IN_IMAGES_WITH_A_PLACEHOLDER, "Fade in images with a placeholder"));
     menuList.add(new MainMenu(18, Constants.ROUTE_WORK_WITH_CACHED_IMAGES, "Work with cached images"));
+    menuList.add(new MainMenu(19, Constants.ROUTE_CREATE_A_GRID_LIST, "Create a grid list"));
+    menuList.add(new MainMenu(20, Constants.ROUTE_CREATE_A_HORIZONTAL_LIST, "Create a horizontal list"));
+    menuList.add(new MainMenu(21, Constants.ROUTE_CREATE_LISTS_WITH_DIFFERENT_TYPES_OF_ITEMS, "Create lists with different types of items"));
+    menuList.add(new MainMenu(22, Constants.ROUTE_PLACE_A_FLOATING_APP_BAR_ABOVE_A_LIST, "Place a floating app bar above a list"));
+    menuList.add(new MainMenu(23, Constants.ROUTE_USE_LISTS, "Use lists"));
+    menuList.add(new MainMenu(24, Constants.ROUTE_WORK_WITH_LONG_LISTS, "Work with long lists"));
 
     return menuList;
   }

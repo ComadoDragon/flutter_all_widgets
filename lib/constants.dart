@@ -20,4 +20,10 @@ class Constants {
   static const String ROUTE_DISPLAY_IMAGES_FROM_THE_INTERNET = "/display_images_from_the_internet";
   static const String ROUTE_FADE_IN_IMAGES_WITH_A_PLACEHOLDER = "/fade_in_images_with_a_placeholder";
   static const String ROUTE_WORK_WITH_CACHED_IMAGES = "/work_with_cached_images";
+  static const String ROUTE_CREATE_A_GRID_LIST = "/create_a_grid_list";
+  static const String ROUTE_CREATE_A_HORIZONTAL_LIST = "/create_a_horizontal_list";
+  static const String ROUTE_CREATE_LISTS_WITH_DIFFERENT_TYPES_OF_ITEMS = "/create_lists_with_different_types_of_items";
+  static const String ROUTE_PLACE_A_FLOATING_APP_BAR_ABOVE_A_LIST = "/place_a_floating_app_bar_above_a_list";
+  static const String ROUTE_USE_LISTS = "/use_lists";
+  static const String ROUTE_WORK_WITH_LONG_LISTS = "/work_with_long_lists";
 }
