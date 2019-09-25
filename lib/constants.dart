@@ -31,4 +31,8 @@ class Constants {
   static const String ROUTE_NAVIGATE_WITH_NAMED_ROUTES = "/navigate_with_named_routes";
   static const String ROUTE_RETURN_DATA_FROM_A_SCREEN = "/return_data_from_a_screen";
   static const String ROUTE_SEND_DATA_TO_A_NEW_SCREEN = "/send_data_to_a_new_screen";
+  static const String ROUTE_FETCH_DATA_FROM_THE_INTERNET = "/fetch_data_from_the_internet";
+  static const String ROUTE_MAKE_AUTHENTICATED_REQUESTS = "/make_authenticated_requests";
+  static const String ROUTE_PARSE_JSON_IN_THE_BACKGROUND = "/parse_json_in_the_background";
+  static const String ROUTE_WORK_WITH_WEBSOCKETS = "/work_with_websockets";
 }

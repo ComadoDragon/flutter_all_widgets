@@ -30,6 +30,10 @@ import 'package:flutter_all_widgets/widgets/navigation/navigate_to_a_new_screen_
 import 'package:flutter_all_widgets/widgets/navigation/navigate_with_named_routes.dart';
 import 'package:flutter_all_widgets/widgets/navigation/return_data_from_a_screen.dart';
 import 'package:flutter_all_widgets/widgets/navigation/send_data_to_a_new_screen.dart';
+import 'package:flutter_all_widgets/widgets/networking/fetch_data_from_the_internet.dart';
+import 'package:flutter_all_widgets/widgets/networking/make_authenticated_requests.dart';
+import 'package:flutter_all_widgets/widgets/networking/parse_json_in_the_background.dart';
+import 'package:flutter_all_widgets/widgets/networking/work_with_websockets.dart';
 
 class RouteGenerator {
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -336,6 +340,46 @@ class RouteGenerator {
         if (args is String) {
           return MaterialPageRoute(
             builder: (_) => SendDataToANewScreen(
+              title: args,
+            ),
+          );
+        }
+        return _errorRoute();
+      case Constants.ROUTE_FETCH_DATA_FROM_THE_INTERNET:
+      // Validation of correct data type
+        if (args is String) {
+          return MaterialPageRoute(
+            builder: (_) => FetchDataFromTheInternet(
+              title: args,
+            ),
+          );
+        }
+        return _errorRoute();
+      case Constants.ROUTE_MAKE_AUTHENTICATED_REQUESTS:
+    // Validation of correct data type
+      if (args is String) {
+        return MaterialPageRoute(
+          builder: (_) => MakeAuthenticatedRequests(
+            title: args,
+          ),
+        );
+      }
+      return _errorRoute();
+      case Constants.ROUTE_PARSE_JSON_IN_THE_BACKGROUND:
+      // Validation of correct data type
+        if (args is String) {
+          return MaterialPageRoute(
+            builder: (_) => ParseJsonInTheBackground(
+              title: args,
+            ),
+          );
+        }
+        return _errorRoute();
+      case Constants.ROUTE_WORK_WITH_WEBSOCKETS:
+      // Validation of correct data type
+        if (args is String) {
+          return MaterialPageRoute(
+            builder: (_) => WorkWithWebSocketsMain(
               title: args,
             ),
           );
