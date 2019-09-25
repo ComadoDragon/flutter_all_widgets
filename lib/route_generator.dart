@@ -25,6 +25,11 @@ import 'package:flutter_all_widgets/widgets/lists/create_lists_with_different_ty
 import 'package:flutter_all_widgets/widgets/lists/place_a_floating_app_bar_above_a_list.dart';
 import 'package:flutter_all_widgets/widgets/lists/use_lists.dart';
 import 'package:flutter_all_widgets/widgets/lists/work_with_long_lists.dart';
+import 'package:flutter_all_widgets/widgets/navigation/animate_a_widget_across_screens.dart';
+import 'package:flutter_all_widgets/widgets/navigation/navigate_to_a_new_screen_and_back.dart';
+import 'package:flutter_all_widgets/widgets/navigation/navigate_with_named_routes.dart';
+import 'package:flutter_all_widgets/widgets/navigation/return_data_from_a_screen.dart';
+import 'package:flutter_all_widgets/widgets/navigation/send_data_to_a_new_screen.dart';
 
 class RouteGenerator {
   static Route<dynamic> generateRoute(RouteSettings settings) {
@@ -267,10 +272,70 @@ class RouteGenerator {
         }
         return _errorRoute();
       case Constants.ROUTE_WORK_WITH_LONG_LISTS:
+    // Validation of correct data type
+      if (args is String) {
+        return MaterialPageRoute(
+          builder: (_) => WorkWithLongLists(
+            title: args,
+          ),
+        );
+      }
+      return _errorRoute();
+      case Constants.ROUTE_ANIMATE_A_WIDGET_ACROSS_SCREENS:
+    // Validation of correct data type
+      if (args is String) {
+        return MaterialPageRoute(
+          builder: (_) => AnimateAWidgetAcrossScreens(
+            title: args,
+          ),
+        );
+      }
+      return _errorRoute();
+      case Constants.ROUTE_NAVIGATE_TO_A_NEW_SCREEN_AND_BACK:
       // Validation of correct data type
         if (args is String) {
           return MaterialPageRoute(
-            builder: (_) => WorkWithLongLists(
+            builder: (_) => NavigateToANewScreenAndBack(
+              title: args,
+            ),
+          );
+        }
+        return _errorRoute();
+      case Constants.ROUTE_NAVIGATE_WITH_NAMED_ROUTES:
+      // Validation of correct data type
+        if (args is String) {
+          return MaterialPageRoute(
+            builder: (_) => NavigateWithNamedRoutes(
+              title: args,
+            ),
+          );
+        }
+        return _errorRoute();
+      case "/second":
+      // Validation of correct data type
+        if (args is String) {
+          return MaterialPageRoute(
+            builder: (_) => SecondScreenToNavigateWithNamedRoutes(
+              title: args,
+            ),
+          );
+        }
+        return _errorRoute();
+      case Constants.ROUTE_RETURN_DATA_FROM_A_SCREEN:
+      // Validation of correct data type
+        if (args is String) {
+          return MaterialPageRoute(
+            builder: (_) => ReturnDataFromAScreen(
+              title: args,
+            ),
+          );
+        }
+        return _errorRoute();
+      case Constants.ROUTE_SEND_DATA_TO_A_NEW_SCREEN:
+      // Validation of correct data type
+        if (args is String) {
+          return MaterialPageRoute(
+            builder: (_) => SendDataToANewScreen(
               title: args,
             ),
           );

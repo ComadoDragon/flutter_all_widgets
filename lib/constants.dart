@@ -26,4 +26,9 @@ class Constants {
   static const String ROUTE_PLACE_A_FLOATING_APP_BAR_ABOVE_A_LIST = "/place_a_floating_app_bar_above_a_list";
   static const String ROUTE_USE_LISTS = "/use_lists";
   static const String ROUTE_WORK_WITH_LONG_LISTS = "/work_with_long_lists";
+  static const String ROUTE_ANIMATE_A_WIDGET_ACROSS_SCREENS = "/animate_a_widget_across_screens";
+  static const String ROUTE_NAVIGATE_TO_A_NEW_SCREEN_AND_BACK = "/navigate_to_a_new_screen_and_back";
+  static const String ROUTE_NAVIGATE_WITH_NAMED_ROUTES = "/navigate_with_named_routes";
+  static const String ROUTE_RETURN_DATA_FROM_A_SCREEN = "/return_data_from_a_screen";
+  static const String ROUTE_SEND_DATA_TO_A_NEW_SCREEN = "/send_data_to_a_new_screen";
 }

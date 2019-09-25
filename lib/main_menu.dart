@@ -46,6 +46,11 @@ class MainMenu {
     menuList.add(new MainMenu(22, Constants.ROUTE_PLACE_A_FLOATING_APP_BAR_ABOVE_A_LIST, "Place a floating app bar above a list"));
     menuList.add(new MainMenu(23, Constants.ROUTE_USE_LISTS, "Use lists"));
     menuList.add(new MainMenu(24, Constants.ROUTE_WORK_WITH_LONG_LISTS, "Work with long lists"));
+    menuList.add(new MainMenu(25, Constants.ROUTE_ANIMATE_A_WIDGET_ACROSS_SCREENS, "Animate a widget across screens"));
+    menuList.add(new MainMenu(26, Constants.ROUTE_NAVIGATE_TO_A_NEW_SCREEN_AND_BACK, "Navigate to a new screen and back"));
+    menuList.add(new MainMenu(27, Constants.ROUTE_NAVIGATE_WITH_NAMED_ROUTES, "Navigate with named routes"));
+    menuList.add(new MainMenu(28, Constants.ROUTE_RETURN_DATA_FROM_A_SCREEN, "Return data from a screen"));
+    menuList.add(new MainMenu(29, Constants.ROUTE_SEND_DATA_TO_A_NEW_SCREEN, "Send data to a new screen"));
 
     return menuList;
   }
